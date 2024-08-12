@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import React, { useRef } from 'react';
+import TransactionsList from './TransactionsList';
+import Statistics from './Statistics';
+import BarChart from './BarChart';
+import PieChart from './PieChart';
 import './App.css';
 
-function App() {
+const App = () => {
+  const statisticsRef = useRef(null);
+
+  const scrollToStatistics = () => {
+    statisticsRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 className='text-blue-600 text-6xl font-bold p-5 flex items-center justify-center'>Transaction Dashboard</h1>
+      <span onClick={scrollToStatistics} className="cursor-pointer flex items-center justify-center underline text-gray-500">Click here to directly go to Statistics and Charts</span>
+      <TransactionsList />
+      <div id="statistics" ref={statisticsRef}>
+        <Statistics/>
+      </div>
+      <div className="charts-container">
+        <div className="chart-size ">
+          <BarChart />
+        </div>
+        <div className="chart-size">
+          <PieChart />
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;

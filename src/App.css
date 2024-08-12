@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+body{
+    margin: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* App.css */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Container for the charts */
+.charts-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows charts to wrap to the next line on smaller screens */
+    gap: 200px 20px; /* Space between charts */
+    margin: 100px 0; /* Vertical spacing around charts container */
+    justify-content: center; /* Center charts horizontally */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* Styles for each chart */
+  .chart-size {
+    flex: 1 1 45%; /* Allows each chart to take up to 45% of the container width */
+    max-width: 100%; /* Ensure charts do not exceed the container width */
+    height: 400px; /* Set a consistent height for charts */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .chart-size {
+      height: 300px; /* Adjust height for smaller screens */
+    }
   }
-}
+  
+  @media (max-width: 480px) {
+    .chart-size {
+      height: 250px; /* Further adjust height for very small screens */
+    }
+  }
+  
