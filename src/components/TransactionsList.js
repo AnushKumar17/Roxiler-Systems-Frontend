@@ -14,7 +14,7 @@ const TransactionsList = () => {
       setLoading(true);
       setError(null);
       try {
-        const response = await axios.get('http://localhost:3000/transactions', {
+        const response = await axios.get('https://app-backend-liard.vercel.app/transactions', {
           params: { search, page: currentPage, per_page: 10 }
         });
         setTransactions(response.data.transactions);

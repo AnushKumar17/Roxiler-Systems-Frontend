@@ -1,9 +1,10 @@
 import React, { useRef } from 'react';
-import TransactionsList from './TransactionsList';
-import Statistics from './Statistics';
-import BarChart from './BarChart';
-import PieChart from './PieChart';
+import TransactionsList from '../src/components/TransactionsList';
+import Statistics from '../src/components/Statistics';
+import BarChart from '../src/components/BarChart';
+import PieChart from '../src/components/PieChart';
 import './App.css';
+import Footer from './components/Footer';
 
 const App = () => {
   const statisticsRef = useRef(null);
@@ -27,6 +28,7 @@ const App = () => {
         <div className="chart-size">
           <PieChart />
         </div>
+        <Footer/>
       </div>
     </div>
   );

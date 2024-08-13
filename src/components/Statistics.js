@@ -16,7 +16,7 @@ const Statistics = () => {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.get('http://localhost:3000/statistics', {
+      const response = await axios.get('https://app-backend-liard.vercel.app/statistics', {
         params: { month }
       });
       setStatistics(response.data);

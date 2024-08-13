@@ -20,7 +20,7 @@ const PieChart = () => {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.get('http://localhost:3000/pie-chart', {
+      const response = await axios.get('https://app-backend-liard.vercel.app/pie-chart', {
         params: { month }
       });
       setData(response.data);
