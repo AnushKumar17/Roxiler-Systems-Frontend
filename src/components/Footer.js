@@ -32,7 +32,7 @@ const Footer = () => {
                     </div>
                     <p className="text-gray-400 mt-4 md:mt-0 text-center md:text-left">
                         Anush Kumar ( <button 
-                        onClick={() => copyToClipboard('yourname@gmail.com')}
+                        onClick={() => copyToClipboard('21cs3007@rgipt.ac.in')}
                         className="text-gray-400 mt-4 md:mt-0 text-center md:text-left hover:underline focus:outline-none"
                     >
                         21cs3007@rgipt.ac.in
