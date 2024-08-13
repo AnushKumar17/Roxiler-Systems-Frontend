@@ -17,16 +17,16 @@ const Footer = () => {
             <div className="container mx-auto px-6">
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <div className="flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0">
-                        <a href="https://github.com/your-frontend-repo" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/AnushKumar17/Roxiler-Systems-Frontend" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
                             Frontend GitHub
                         </a>
-                        <a href="https://github.com/your-backend-repo" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/AnushKumar17/Roxiler-Systems-Backend" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
                             Backend GitHub
                         </a>
-                        <a href="https://your-frontend-deployment-url" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
+                        <a href="https://roxiler-systems-frontend-seven.vercel.app/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
                             Frontend Deployment
                         </a>
-                        <a href="https://your-backend-deployment-url" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
+                        <a href="https://app-backend-liard.vercel.app/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
                             Backend Deployment
                         </a>
                     </div>
